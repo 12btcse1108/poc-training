@@ -1,0 +1,41 @@
+/*-------------------- For LogicSet --------------------*/
+
+create table logicset(
+	logicset_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	msg_name VARCHAR(40) NOT NULL,
+	topic_name VARCHAR(40) NULL,
+	algorithm_name VARCHAR(40) NOT NULL,
+	train_topic VARCHAR(40) NULL,
+	predict_topic_input VARCHAR(40) NULL,
+	predict_topic_output VARCHAR(40) NULL,
+	num_iterations INT NULL,
+	learning_rate DOUBLE(20,10) NULL,
+	model_save_interval INTEGER(5) NULL,
+	algorithm VARCHAR(40) NOT NULL,
+	continous_variable VARCHAR(400) NULL,
+	category_variable VARCHAR(400) NULL,
+	prediction_variable VARCHAR(400) NULL,
+	weights VARCHAR(1000) NULL,
+	analyze_state VARCHAR(40) NULL);
+
+/*---------For msg_table -----------------------*/
+
+create table msg_table(
+	msg_id INT NOT NULL AUTO_INCREMENT  PRIMARY KEY,
+	msg_name VARCHAR(40) NOT NULL UNIQUE,
+	msg_structure VARCHAR(400) NOT NULL);
+
+/*---------For login-----------------------*/
+
+create table login(
+	user_name varchar(320) NOT NULL,
+	password varchar(320) NOT NULL);
+
+insert into login values ('admin@wipro.com','admin');
+/*---------For file_info -----------------------*/
+
+create table file_info(
+	algo_name varchar(320),
+	data_source varchar(320),
+	file_path varchar(320));
+	

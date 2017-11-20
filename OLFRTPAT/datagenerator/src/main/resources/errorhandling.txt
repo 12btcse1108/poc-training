@@ -1,0 +1,36 @@
+except err-db0msg001:
+	print("An error occured while retrieving msg from database")
+except err-db0msg002:
+	print("An error occured while inserting msg in database")
+except err-db0msg003:
+	print("An error occured while updating msg and saving in database")
+except err-db0msg004:
+	print("An error occured while deleting msg from database")
+except err-db0log005:
+	print("An error occured while ")
+except err-db0log006:
+	print("An error occured while ")
+except err-db0log007:
+	print("An error occured while ")
+except err-db0log008:
+	print("An error occured while ")
+except err-db0log009:
+	print("An error occured while ")
+except err-db0log010:
+	print("An error occured while ")
+except err-db0log011:
+	print("An error occured while ")
+except err-db0log012:
+	print("An error occured while ")
+except err-db0log013:
+	print("An error occured while ")
+except err-db0log0014:
+	print("An error occured while ")
+except err-db0log0015:
+	print("An error occured while ")
+
+
+err00ValueError
+Raised when a built-in operation or function receives an argument that has the
+right type but an inappropriate value
+

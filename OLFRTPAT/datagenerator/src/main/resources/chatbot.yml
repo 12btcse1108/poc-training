@@ -1,0 +1,4 @@
+chatbot:
+    kafka:
+        brokers : localhost:9092
+        zkQuoram: localhost:2181
